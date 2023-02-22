@@ -1,5 +1,12 @@
 # Star wars Stuff
 
+### Setup
+
+Make sure to have the following value on your env file (you can find a sample on the `.env.example` file):
+
+```env
+STARWARS_API_URL="https://mystarwarsapi.com/"
+```
 ### Endpoints
 
 Postman collection can be found [here](./docs/StarWars.postman_collection.json)
