@@ -1,0 +1,72 @@
+{
+	"info": {
+		"_postman_id": "4e62a359-cec8-4d54-8422-e946ffe1436b",
+		"name": "StarWars",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Luke's Starships",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/star-wars/people/luke/starships",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"star-wars",
+						"people",
+						"luke",
+						"starships"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Species Classification",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/star-wars/films/phantom/species/classification",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"star-wars",
+						"films",
+						"phantom",
+						"species",
+						"classification"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Galaxy Population",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost/api/star-wars/galaxy/population",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"api",
+						"star-wars",
+						"galaxy",
+						"population"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

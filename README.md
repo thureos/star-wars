@@ -2,6 +2,8 @@
 
 ### Endpoints
 
+Postman collection can be found [here](./docs/StarWars.postman_collection.json)
+
 # Show Starships related to Luke
 
 Returns a list of starships related to Luke
