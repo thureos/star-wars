@@ -32,6 +32,11 @@ class ApiBasedStarWarsRepository implements StarWarsRepository
         $this->client = $client;
     }
 
+    /**
+     * Returns a list of Luke's related starships
+     * @return Collection 
+     * This value will never change so, even instead of using Cache forever, we might as well hardcode the whole value instead
+     */
     public function listLukeSkywalkerRelatedStarships(): Collection
     {
         return Cache::remember('starwars.person.1.starships.list', 10 * 60, function(){
@@ -41,6 +46,11 @@ class ApiBasedStarWarsRepository implements StarWarsRepository
         });
     }
 
+    /**
+     * Returns classification and species grouped by classification
+     * @return Collection 
+     * This value will never change so, even instead of using Cache forever, we might as well hardcode the whole value instead
+     */
     public function speciesClassificationsFromFirstEpisode(): Collection
     {
         return Cache::remember('starwars.film.1.species.classification', 10 * 60, function(){
@@ -57,6 +67,10 @@ class ApiBasedStarWarsRepository implements StarWarsRepository
 
     }
 
+    /**
+     * Returns galaxys total population
+     * @return int 
+     */
     public function galaxysTotalPopulation(): int
     {
         return Cache::remember('starwars.galaxy.population', 10 * 60, function(){
@@ -68,7 +82,7 @@ class ApiBasedStarWarsRepository implements StarWarsRepository
 
 
     /**
-     * This can be using some kind of pagination collaborator class, decided just to over engineer it
+     * This can be using some kind of pagination collaborator class, decided not to over engineer it
      */
     private function getAllPlanets(): Collection
     {
